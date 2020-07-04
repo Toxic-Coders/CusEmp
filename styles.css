@@ -100,7 +100,7 @@ nav ul{
     text-shadow: none;
     text-transform: none;
     padding-right: 0;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
 }
 
 header nav ul li{
@@ -120,7 +120,7 @@ span{
     font-size: 2.5rem;
 }
 
-p{
+.top-para{
     font-family: 'Noto Sans', sans-serif;
     padding: 50px 250px;
     color: #218389;
@@ -149,7 +149,7 @@ p{
 }
 
 @media(max-width: 1000px){
-    p{
+    .top-para{
         padding: 50px 100px;
         font-size: 1.5rem;
     }
@@ -161,21 +161,56 @@ p{
 }
 
 @media(max-width: 800px){
+
+    header nav ul li{
+        padding-right: 30px;
+    }
+
     #heading{
         word-spacing: 10px;
         font-size: 3.5rem;
         padding-top: 150px;
     }
 
-    p{
+    .top-para{
         padding: 20px 100px;
         font-size: 1rem;
         line-height: 30px;
     }
 }
 
+@media(max-width: 700px){
+    header nav ul li{
+        font-size: 1rem;
+    }
+
+    .gs{
+        font-size: 1rem;
+    }
+
+    .hm{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 580px){
+    header nav ul li{
+        padding-right: 15px;
+        font-size: .7rem;
+    }
+
+    .hm{
+        font-size: 1.5rem;
+    }
+
+    .gs{
+        font-size: .7rem;
+
+    }
+}
+
 @media(max-width: 500px){
-    p{
+    .top-para{
         padding: 20px 30px;
         line-height: 30px;
     }
@@ -186,58 +221,19 @@ p{
     }
 
     .hm{
-        font-size: .5rem;
-    }
-}
-
-@media(max-width: 800px){
-    header nav ul li{
-        padding-right: 30px;
-    }
-    .hm{
-        font-size: .5rem;
+        font-size: 1.5rem;
     }
 }
 
 
-
-@media(max-width: 600px){
-    header nav ul li{
-        font-size: 1rem;
-    }
-
-    .gs{
-        font-size: 1rem;
-    }
-
-    .hm{
-        font-size: .5rem;
-}
-
-@media(max-width: 500px){
-    header nav ul li{
-        padding-right: 15px;
-        font-size: .7rem;
-    }
-
-    .hm{
-        font-size: .7rem;
-    }
-
-    .gs{
-        font-size: .7rem;
-
-    }
-}
-
-@media(max-width: 300px){
+@media(max-width: 400px){
     header nav ul li{
         font-size: .5rem;
         padding-right: 10px;
     }
 
     .hm{
-        font-size: .2rem;
+        font-size: 1.3rem;
     }
 
 }
@@ -246,11 +242,101 @@ p{
     header nav ul li{
         font-size: .2rem;
         padding-right: 5px;
+        word-spacing: 1px;
     }
 
     .hm{
-        font-size: .2rem;
+        font-size: .1rem;
+    }
 }
+
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+
+.cards .card{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card1{
+    background-color: #55efc4;
+    border-radius: 20px;
+}
+
+.card2{
+    border-radius: 20px;
+    background-color: #55efc4;
+}
+
+.card3{
+    background-color: #55efc4;
+    border-radius: 20px;
+}
+
+.cards .card .cp{
+    font-size: 1.3rem;
+    color: #006d77;
+    padding: 30px;
+    text-align: center;
+}
+
+.cards .card .ci{
+    display: flex;
+    width: 150px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.cards .card .img{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .cards .card{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cards .card{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .cards .card{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 550px) {
+    .cards{
+        flex-direction: column;
+    }
+
+    .cards .card{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+    }
+}
+
+
+
 
 
 
