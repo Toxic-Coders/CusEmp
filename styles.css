@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -26,6 +30,7 @@
 }
 
 body{
+    font-family: 'Noto Sans', sans-serif;
     list-style-type: none;
     text-decoration: none;
     font-family: sans-serif;
@@ -51,6 +56,7 @@ a:hover{
 }
 
 nav{
+    color: white;
     padding: 10px 0 0;
 }
 
@@ -59,7 +65,6 @@ nav{
 }
 
 a{
-    color: #55efc4;
     text-decoration: none;
     transition: color .5s;
 }
@@ -72,6 +77,7 @@ nav ul{
     align-items: center;
 /*     padding-bottom: 35px; */
     line-height: 80px;
+    color: white;
 }
 
 .gs{
@@ -105,6 +111,7 @@ nav ul{
 }
 
 header nav ul li{
+    color: white;
     white-space: nowrap;
     letter-spacing: 1px;
     word-spacing: 3px;
@@ -113,6 +120,10 @@ header nav ul li{
     padding-right: 70px;
     display: inline-block;
     float: right;
+}
+
+header nav  ul a{
+    color: #55efc4;
 }
 
 span{
@@ -302,6 +313,7 @@ span{
 }
 
 .cards .card .cp{
+    font-family: 'Noto Sans', sans-serif;
     font-size: 1.3rem;
     color: #006d77;
     padding: 30px;
@@ -375,6 +387,7 @@ span{
     color: #006d72;
     padding: 100px;
     padding-top: 70px;
+    font-family: 'Noto Sans', sans-serif;
     margin-right: 80px;
 }
 
@@ -420,6 +433,7 @@ span{
     word-spacing: 7px;
     padding: 100px 0;
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 .gs-1{
@@ -476,18 +490,142 @@ span{
 
 }
 
+.lgs{
+    margin-top: 50px;
+}
 
+.lgs-h1{
+    text-align: center;
+    word-spacing: 11px;
+    font-family: 'Merriweather', serif;
+    padding: 50px;
+    font-size: 3rem;
+    color: #00636C;
+}
 
+.tgfs{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0px 0 50px;
+    word-spacing: 5px;
+    letter-spacing: .9px;
+    text-align: center;
+    color: #117880;
+}
 
+.email{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
 
+.email input{
+    outline: none;
+    border-radius: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    border-color: #006D77;
+}
 
+.email h2{
+    font-family: 'Noto Sans', sans-serif;
+    margin-right: 50px;
+    color: #218389;
+}
 
+.password{
+    padding: 0;
+    margin-left: -46px;
+}
 
+.cwg{
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    letter-spacing: .9px;
+    word-spacing: 3px;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 20px 465px 20px 420px;
+    color: white;
+    background-color: #218389;
+    transition: border-color 1s, color 1s, background-color 1s;
+    border: 2px solid #218389;
+}
 
+@media(max-width: 1200px){
+    .cwg{
+        margin: 20px 405px 20px 350px;
+    }
+}
 
+@media(max-width: 1000px){
+    .cwg{
+        margin: 20px 300px 20px 250px;
+    }
+}
 
+@media(max-width: 800px){
+    .cwg{
+        margin: 20px 200px 20px 150px;
+    }
+}
 
+@media(max-width: 600px){
+    .cwg{
+        margin: 20px 100px 20px 50px;
+    }
 
+    .email{
+        padding: 20px;
+    }
+    .email input{
+        font-size: 1.2rem;
+    }
+}
 
+@media(max-width: 500px){
+    .cwg{
+        margin: 20px 100px 20px 50px;
+    }
+
+    .email{
+        padding: 10px;
+        padding-right: 0;
+        margin-left: 20px;
+    }
+
+    .password{
+        margin-left: -25px;
+    }
+
+    .email input{
+        font-size: 1rem;
+    }
+
+    .email h2{
+        margin-right: 10px;
+    }
+}
+
+.cwg a{
+    color: white;
+}
+
+.cwg:hover{
+    border: 2px solid #218389;
+    transition: border-color 1s, color 1s, background-color 1s;
+    background-color: white;
+    color: #218389;
+}
+
+.cwg:active{
+    border: 2px solid #55efc4;
+    transition: border .01s;
+}
 
 
