@@ -628,4 +628,68 @@ span{
     transition: border .01s;
 }
 
+footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    color: #55efc4;
+    background-color: #218389;
+    padding: 50px;
+}
+
+footer ul{
+    padding: 30px;
+    list-style-type: none;
+}
+
+footer ul ul li{
+    list-style-type: '>   ';
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
