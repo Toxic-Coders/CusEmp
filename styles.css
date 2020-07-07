@@ -92,14 +92,14 @@ nav ul{
 
 .gs:hover{
     color: #0099A6;
-    background-color: #55efc4;
-    border-color: #55efc4;
+    background-color: white;
+    border-color: white;
     transition: color .5s ease-in, background-color .5s  ease-in, border-color .5s ease-out;
 }
 
 .gs:active{
     transition: color .1s linear;
-    color: white;
+    color: #55efc4;
 }
 
 .hm{
@@ -543,7 +543,6 @@ span{
 }
 
 .cwg{
-    cursor: pointer;
     border-radius: 50px;
     padding: 8px 0px 8px 0px;
     text-align: center;
@@ -640,15 +639,6 @@ footer{
     margin-top: 50px;
 }
 
-footer ul{
-    padding: 10px;
-    list-style-type: none;
-}
-
-footer a{
-    color: #55efc4;
-}
-
 .footer-icons a img{
     width: 50px;
 }
@@ -661,17 +651,64 @@ footer a{
     margin-left: 30px;
 }
 
+.ft-txt {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    flex-direction: row;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    margin-left: 500px;
+    font-size: .8rem;
+}
 
+#ft-pl a:hover{
+    text-decoration: underline;
+}
 
+#ft-pl a{
+    display: flex;
+    margin-top: 15px;
+    padding-left: 40px;
+    color: white;
+}
 
+.ft-txt h2 a {
+}
 
+.ft-txt h2{
+}
 
+#collab{
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 5px;
+    transition: color 1s, background-color 1s, border 1s;
+    background-color: #218389;
+    border: 2px solid #55efc4;
+    color: white;
+}
 
+#collab:hover{
+    background-color: white;
+    color: #218389;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: color 1s, background-color 1s, border 1s;
+}
 
+#collab:active{
+    color: #55efc4;
+    transition: color .01s;
+}
 
+@media (max-width: 1300px;) {
 
-
-
+}
 
 
 
